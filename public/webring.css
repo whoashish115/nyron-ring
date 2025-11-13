@@ -1,0 +1,42 @@
+/* Nyron Ring widget. Scoped under .webring and uses currentColor so it
+   inherits the host page instead of fighting it. */
+
+.webring {
+  display: inline-block;
+  max-width: 280px;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.webring-logo {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.webring-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.webring-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.webring-nav a {
+  color: currentColor;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.15s ease;
+}
+
+.webring-nav a:hover,
+.webring-nav a:focus-visible {
+  opacity: 1;
+  text-decoration: underline;
+}
