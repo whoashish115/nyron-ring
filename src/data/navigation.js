@@ -3,6 +3,7 @@ import { config } from "./config";
 export const navigation = [
   { href: "/", label: "Home" },
   { href: "/members", label: "Members" },
+  { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
   { href: "/join", label: "Join" },
 ];
@@ -18,6 +19,12 @@ export const utilities = [
     note: "Open the panel and browse without losing your place",
     accent: "crimson",
     popup: true,
+  },
+  {
+    href: "/blog",
+    label: "Ring blog",
+    note: "Every member's latest posts, in one stream",
+    accent: "rust",
   },
   {
     href: "/ring/browse?action=random",
@@ -56,6 +63,7 @@ export const utilities = [
 
 export const footerLinks = [
   { href: "/members", label: "Members" },
+  { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
   { href: "/join", label: "Join" },
   { href: "/rss.xml", label: "Feed", external: true },

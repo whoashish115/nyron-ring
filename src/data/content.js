@@ -20,6 +20,18 @@ export const home = {
   ],
 };
 
+export const blog = {
+  heading: "Blog",
+  lead: "Recent posts from every member who publishes a feed, newest first.",
+  feedLabel: "Subscribe to the combined feed",
+  emptyNoFeeds:
+    "No member has given us a feed yet. Add an `rss` URL to any entry in src/data/sites.js and their posts will appear here.",
+  emptyUnreachable:
+    "No posts could be read right now. The member feeds may be temporarily unreachable; this page refreshes every hour.",
+  sourcesLabel: "Reading feeds from",
+  readMore: "Read post",
+};
+
 export const members = {
   heading: "Members",
   lead: "in ring order. Each links out to the member's own site.",
