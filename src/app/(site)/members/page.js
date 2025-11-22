@@ -4,7 +4,7 @@ import { config } from "@/data/config";
 import { members as copy } from "@/data/content";
 import { sites, memberCount } from "@/data/sites";
 import { pageMetadata } from "@/lib/metadata";
-import MemberList from "@/components/members/MemberList";
+import MemberBrowser from "@/components/members/MemberBrowser";
 import Divider from "@/components/ui/Divider";
 
 export const metadata = pageMetadata({
@@ -50,7 +50,7 @@ export default function MembersPage() {
 
       <Divider />
 
-      <MemberList members={sites} />
+      <MemberBrowser members={sites} />
 
       <p className="mt-5 text-sm text-muted">
         {copy.joinPrompt}{" "}
