@@ -32,12 +32,20 @@ export const blog = {
   readMore: "Read post",
 };
 
+export const owner = {
+  title: "Owner",
+  badge: "owner",
+  lead: "Who keeps this ring, reads the submissions, and prunes the dead links.",
+};
+
 export const members = {
   heading: "Members",
   lead: "in ring order. Each links out to the member's own site.",
   randomLabel: "Open a random one",
   feedLabel: "combined feed",
   topicsTitle: "Topics",
+  listTitle: "Members",
+  listLead: "Everyone else in the ring.",
   searchLabel: "Search",
   searchPlaceholder: "Name, domain, topic or person",
   filterHint: "Pick topics to narrow the list. A site matches if it has any of them.",

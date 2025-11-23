@@ -5,6 +5,7 @@ import { members as copy } from "@/data/content";
 import { sites, memberCount } from "@/data/sites";
 import { pageMetadata } from "@/lib/metadata";
 import MemberBrowser from "@/components/members/MemberBrowser";
+import OwnerCard from "@/components/members/OwnerCard";
 import Divider from "@/components/ui/Divider";
 
 export const metadata = pageMetadata({
@@ -26,6 +27,8 @@ const jsonLd = {
   })),
 };
 
+const ringOwner = sites.find((site) => site.owner === config.author.name);
+const listed = sites.filter((site) => site !== ringOwner);
 
 export default function MembersPage() {
   return (
@@ -50,7 +53,14 @@ export default function MembersPage() {
 
       <Divider />
 
-      <MemberBrowser members={sites} />
+      <OwnerCard member={ringOwner} />
+
+      <Divider />
+
+      <h2 className="text-lg">{copy.listTitle}</h2>
+      <p className="mb-3 mt-1 text-sm text-muted">{copy.listLead}</p>
+
+      <MemberBrowser members={listed} />
 
       <p className="mt-5 text-sm text-muted">
         {copy.joinPrompt}{" "}
