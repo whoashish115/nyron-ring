@@ -19,5 +19,20 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "tailwindcss": "^4"
-  }
+  },
+  "description": "An open source template for running your own webring. Built with Next.js.",
+  "license": "MIT",
+  "homepage": "https://nyron.metaversemagician.space",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whoashish115/nyron-ring.git"
+  },
+  "keywords": [
+    "webring",
+    "indie-web",
+    "small-web",
+    "nextjs",
+    "template",
+    "open-source"
+  ]
 }
